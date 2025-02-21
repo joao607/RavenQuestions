@@ -14,4 +14,4 @@ end
 
 I set the local function of storage_key so it can exist, also storage_Key defined as 1000 per player.
 ''player then'' is to make sure that a player exist.
-On Logoutevent if the player has his storage setting diferent from 1000 than it will release it to 1000 again. 
+On Logoutevent if the player has his storage setting diferent from Storage_key setvalue of 1000 spaces than it will release it to 1000 again in 1(1000) second. 
