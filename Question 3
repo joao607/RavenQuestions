@@ -2,10 +2,10 @@ function do_Dancing_with_PlayerParty(playerId)
 player = Player(playerId)
 local party = player:getParty()
 
-for k,v in pairs(party:getMembers()) do 
-    if v == Player(playerID) then 
-        party:removeMember(Player(playerId))
+for pairs(party:getMembers()) do  
+if pairs_not_Dancing(playerId)) than
     party:removeMember(playerId)
+    
     end
-end
+    end
 end
