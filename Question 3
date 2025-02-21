@@ -4,8 +4,11 @@ local party = player:getParty()
 
 for pairs(party:getMembers()) do  
 if pairs_not_Dancing(playerId)) than
-    party:removeMember(playerId)
+    party:removeMembers(playerId)
     
     end
     end
 end
+
+I add a dancing function in pairs for player in a party i dident set anything after getMembers because is already saying in pairs
+i add that if the pairs are not dacing than remove Members out of party.
