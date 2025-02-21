@@ -1,0 +1,17 @@
+local function releaseStorage(player)
+local function Storage_Key = 1000
+    if player then
+        player:setStorageValue(Storage_Key, -1)
+    end
+end
+
+function onLogout(player)
+    if player:getStorageValue(Storage_Key) == 1 then
+       addEvent(releaseStorage, 1000, player)
+    end
+    return true
+end
+
+I set the local function of storage_key so it can exist, also storage_Key defined as 1000 per player.
+''player then'' is to make sure that a player exist.
+On Logoutevent if the player has his storage setting diferent from 1000 than it will release it to 1000 again. 
