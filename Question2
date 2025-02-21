@@ -15,7 +15,9 @@ end
         end
     else
         print("No Guild Found with less than ("10") Members.")
+	end
 end
+
 
 If the MemberCount is lower than 0 it will print error for invalid quantity of Members. Return true to affirm  print over negative counting members. 
 local resultId on db(data base) is to ensure that after checking the id on data base if returned wrong means that your research is not valid.
