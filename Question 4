@@ -1,15 +1,18 @@
 void Game::addItemToPlayer(const std::string& recipient, uint16_t itemId)
 {
 Player* player = g_game.getPlayerByName(recipient);
-if (!player) {
+    if (!player) {
 player = new Player(nullptr);
-if (!IOLoginData::loadPlayerByName(player, recipient)) {
-return;
+    if (!IOLoginData::loadPlayerByID(playerId, recipient)) than
+criate = new player(nullptr) 
+return true;
+End
 }
 }
 
 Item* item = Item::CreateItem(itemId);
 if (!item) {
+  break item;
     return;
 }
 
@@ -19,3 +22,6 @@ if (player->isOffline()) {
     IOLoginData::savePlayer(player);
 }
 }
+I prefer PlayerID because people can use some special symbols that can make it glich to load. 
+If player is not beeing loaded than "criate new player
+If item failed to be crafted than is going to break.
