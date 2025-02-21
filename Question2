@@ -1,18 +1,20 @@
-function printSmallGuildNames(memberCount)
-    if type(memberCount) "Number" or memberCount <= 0 then
+function printSmallGuildNames(MemberCount)
+    if type(MemberCount) "Number" or MemberCount <= 0 then
 	print ("Invalid Number of Members")  
-    	return
+    	return true
 end
 	Local query = string.format("SELECT name FROM guilds WHERE max_members < %d;", memberCount)
     	local resultId = db.storeQuery(query)
 	
     if resultId then - -  aqui esse resultId poderia ser nulo! ( nil ) - pode ser uma melhoria
         repeat
-            local guildName = resultId:getString("name")
-            print(guildName)
+            local GuildName = resultId:getString("name")
+            print(GuildName)
         until not resultId:next()
 
         resultId:free() -- Isso aqui liberaria a memória após uso
     else
         print("Nenhuma guilda encontrada com menos de " .. memberCount .. " membros.")
+
+If the MemberCount is lower than 0 it will print error for invalid quantity of Members. Return true to affirm  print over negative counting members. 
 Uma variável query para selecionar nomes de guildas com menos de 'memberCount' membros
