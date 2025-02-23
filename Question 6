@@ -1,1 +1,11 @@
-function onCastSpell
+function DashrunAnimation
+  if player = DashrunSkill than
+addEvent(DashrunSkillAnimation, 1000)
+  end
+    return true
+end
+function onCastSkill(player,self)
+local player = get5Blocks
+  if player onCastSkill 
+
+
