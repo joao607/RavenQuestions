@@ -12,3 +12,4 @@ function onCastSkill(player,self)
     return true
 end
 
+On video 6 the player is dashing so i coded as a skill not a spell since is self inflicted. And put it as 5 block from his direction.
