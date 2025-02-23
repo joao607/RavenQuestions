@@ -1,2 +1,3 @@
 function onCastSpell
+addEvent(whirlwindAnimation,whirlwindDuration / 1000)
 
