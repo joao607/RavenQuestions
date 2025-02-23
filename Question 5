@@ -7,3 +7,4 @@ function onCastSpell(creature)
 	end
 	return true
 end
+ In the Whirlwind Spell i made that the person if not dead the creature gets 142 damage and throwed away to random location. 
