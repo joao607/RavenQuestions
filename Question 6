@@ -6,6 +6,10 @@ addEvent(DashrunSkillAnimation, 1000)
 end
 function onCastSkill(player,self)
 local player = get5Blocks
-  if player onCastSkill 
-
+  if player = onCastSkill than 
+    get5Blocks ahead
+  end
+    end
+    return true
+end
 
