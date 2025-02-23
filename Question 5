@@ -1,7 +1,7 @@
 function onCastSpell(creature)
-  local creature = getTopCreature(getPositionByDirection(getCreaturePosition, getCreatureLookDirection(cid), i))
+  local creature = getCreature(getRandomPosition)
 		if (creature > 0) then
-			doSendDistanceShoot(getCreaturePosition(cid), getCreaturePosition(creature.uid), CONST_ANI_WHIRLWINDSWORD)
+			doSendDistanceShoot(getRandomPosition)
 			doTargetCombatHealth(cid, creature.uid, COMBAT_PHYSICALDAMAGE, -142 * i, -214 * i, CONST_ME_NONE)
 			return true
 		end
