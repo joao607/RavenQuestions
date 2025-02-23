@@ -1,4 +1,4 @@
-function onCastSpell(player,self)
+function onCastSpell(creature)
   if player than 
   onCastSkill = get5Blocks ahead
   local creature = getTopCreature(getPositionByDirection(getCreaturePosition(cid), getCreatureLookDirection(cid), i))
